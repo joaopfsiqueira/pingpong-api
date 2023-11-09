@@ -14,5 +14,7 @@ COPY ./src ./src
 # Instala todos os pacotes no container
 RUN npm install
 
+EXPOSE 1111
+
 # Vai rodar o comando npm start, assim que nosso container criar a api já vai passar a rodar, sem necessitar de um npm start!
 CMD npm run start
