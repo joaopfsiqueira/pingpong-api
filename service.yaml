@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: pingpong-api-service
+spec:
+    selector:
+        app: pingpong-api
+    ports:
+        - protocol: 'TCP' # lista de informações da porta.
+          port: 2222
+          targetPort: 2222
+    type: LoadBalancer
