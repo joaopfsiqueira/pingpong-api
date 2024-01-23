@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: pingpong-api
+spec:
+    replicas: 3
+    selector:
+        matchLabels:
+            app: pingpong-api
+    template:
+        metadata:
+            labels:
+                app: pingpong-api
+        spec:
+            containers:
+                - name: pingpong
+                  image: joaopfsiqueira/pingpong-kubernetes-api
