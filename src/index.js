@@ -9,6 +9,6 @@ app.get('/ping', (req, res) => {
 	res.send('Pong!');
 });
 
-app.listen(process.env.PORT || 1111, () => {
-	console.log('Server running on port 3000');
+app.listen(process.env.PORT || 2222, () => {
+	console.log('Server running on port 2222');
 });
