@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
     name: pingpong-api
 spec:
-    replicas: 3
+    replicas: 1
     selector:
         matchLabels:
             app: pingpong-api

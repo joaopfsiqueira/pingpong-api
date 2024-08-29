@@ -8,8 +8,8 @@ spec:
         app: pingpong-api
     ports:
         - protocol: 'TCP' # lista de informações da porta.
-          port: 2222
-          targetPort: 2222
+          port: 1111
+          targetPort: 1111
     type: LoadBalancer
 ---
 apiVersion: apps/v1
